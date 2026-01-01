@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 //import Hero from '@/components/Hero';
 import RouteCards from '@/components/RouteCards';
 
+
 export default async function Home({
   params,
 }: {
@@ -12,9 +13,10 @@ export default async function Home({
 
   return (
     <>
-      <Header lang={lang} />
+      <Header lang={lang} t={t} />
       {/* <Hero t={t} /> */}
       <RouteCards t={t} lang={lang} />
+
     </>
   );
 }

@@ -1,12 +1,20 @@
-export default function SchoolsPage() {
+import { getT } from '@/i18n/getT';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import SchoolTabs from '@/components/SchoolTabs';
+import NewsList from '@/components/NewsList';
+import ImageGallerySwiper from '@/components/ImageGallerySwiper';
+
+export default async function SchoolsPage({ params }: any) {
+  const { lang, t } = getT((await params).lang);
+
   return (
-    <main style={{ padding: 24 }}>
-      <h1>日本学校分类</h1>
-      <ul>
-        <li>初高中</li>
-        <li>大学 / 大学院</li>
-        <li>技术学校</li>
-      </ul>
-    </main>
+    <>
+      <Header lang={lang} t={t} />
+      <SchoolTabs t={t} />
+      <NewsList t={t} />
+      <ImageGallerySwiper />
+      <Footer />
+    </>
   );
 }

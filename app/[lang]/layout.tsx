@@ -2,6 +2,10 @@ import { getT } from '@/i18n/getT';
 import Header from '@/components/Header';
 import RouteCards from '@/components/RouteCards';
 import Footer from '@/components/Footer';
+import HeroSwiper from '@/components/HeroSwiper';
+import SchoolTabs from '@/components/SchoolTabs';
+import NewsList from '@/components/NewsList';
+import ImageGallerySwiper from '@/components/ImageGallerySwiper';
 
 export default async function Home({
   params,
@@ -12,16 +16,24 @@ export default async function Home({
 
   return (
     <>
-      <Header lang={lang} />
+      <Header lang={lang} t={t} />
+      {/* Swiper Hero */}
+      <HeroSwiper t={t} />
 
-      <section style={styles.hero}>
+
+      {/* <section style={styles.hero}>
         <h1>{t.home.title}</h1>
         <h2>{t.home.subtitle}</h2>
         <p>{t.home.desc}</p>
         <button>{t.common.viewRoute}</button>
-      </section>
+      </section> */}
 
       <RouteCards t={t} lang={lang} />
+
+
+            <SchoolTabs t={t} />
+            <NewsList t={t} />
+            <ImageGallerySwiper />
 
       <Footer />
     </>
