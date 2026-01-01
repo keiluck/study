@@ -1,3 +1,4 @@
+'use client';
 import Link from 'next/link';
 import { Button } from '@mui/material';
 
@@ -14,7 +15,7 @@ export default function RouteCards({
     <section style={styles.grid}>
       {routes.map(([key, r]: any) => (
         <div key={key} style={styles.card}>
-          <img src={r.imgage} alt={r.title} style={{ width: '150px', height: '120px', borderRadius: 8 }} />
+          <img src={r.image} alt={r.title} style={{ width: '150px', height: '120px', borderRadius: 8 }} />
           <div>
           <h3>{r.title}</h3>
           <p>{r.desc}</p>
