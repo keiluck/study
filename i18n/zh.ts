@@ -1,9 +1,12 @@
-export const zh = {
-common: {
-    menu: 'MENU',
+import { Dictionary } from './types';
+
+const zh: Dictionary = {
+  common: {
+    menu: '菜单',
     viewRoute: '查看路线',
   },
-    nav: {
+
+  nav: {
     home: '首页',
     routes: '路线规划',
     schools: '学校介绍',
@@ -12,79 +15,70 @@ common: {
   },
 
   home: {
-    title: '面向中国学生与社会人',
-    subtitle: '日本留学・升学・就职 规划平台',
-    desc: '从学习日语，到办理签证，再到顺利赴日',
+    title: '赴日升学与就职规划',
+    subtitle: '一站式日本路线平台',
+    desc: '覆盖初高中、大学、大学院与就职路径。',
   },
 
   routes: {
     junior: {
-      imgage: '/images/pic001.jpeg',
-      title: '初高中 → 日本初高中',
-      desc: '适合初中生 / 高中生',
+      image: '/images/pic001.jpg',
+      title: '初高中赴日',
+      desc: '面向初高中生的日本升学路线。',
     },
     university: {
-      imgage: '/images/pic002.jpeg',
-      title: '18岁以上 → 大学 / 大学院',
-      desc: '适合高中毕业生 / 大学生',
+      image: '/images/pic002.jpg',
+      title: '大学 / 大学院',
+      desc: '本科与研究生升学规划。',
     },
     work: {
-      imgage: '/images/pic003.jpeg',
-      title: '社会人 → 就职（特定技能 / 人文）',
-      desc: '适合希望赴日工作的社会人',
+      image: '/images/pic003.jpg',
+      title: '社会人就职',
+      desc: '特定技能、人文签证就职支持。',
     },
-    
   },
 
   schools: {
     title: '学校介绍',
-
     tabs: {
       japan: '日本',
       western: '欧美',
       hongkong: '香港',
     },
-
     japan: {
       title: '日本学校',
-      desc: '涵盖日本的初高中、大学、大学院及技术学校，为学生提供多元升学路径。',
+      desc: '日本初高中、大学、大学院及专门学校。',
     },
-
     western: {
       title: '欧美学校',
-      desc: '覆盖欧美国家的高中、本科及研究生院校，适合希望接受国际教育的学生。',
+      desc: '欧美国家的高等教育机构。',
     },
-
     hongkong: {
       title: '香港学校',
-      desc: '提供香港地区的国际学校与大学升学信息，兼具中西教育优势。',
+      desc: '香港地区国际教育资源。',
     },
   },
 
   news: {
     title: '新闻资讯',
-
     list: [
       {
-        title: '2025 年日本留学政策更新',
-        desc: '最新留学签证及升学政策解读，帮助学生合理规划赴日路线。',
-        image: '/images/pic001.jpeg',
+        title: '2025 日本留学政策更新',
+        desc: '最新签证与升学政策解读。',
+        image: '/images/pic001.jpg',
       },
       {
-        title: '日本大学入学考试时间公布',
-        desc: '主要大学的入试时间安排正式发布，请及时准备。',
-        image: '/images/pic002.jpeg',
+        title: '2025 日本留学政策更新',
+        desc: '最新签证与升学政策解读。',
+        image: '/images/pic002.jpg',
       },
       {
-        title: '留学生在日就职趋势分析',
-        desc: '解析近年留学生就业方向与热门行业。',
-        image: '/images/pic003.jpeg',
+        title: '2026 日本留学政策更新',
+        desc: '最新签证与升学政策解读。',
+        image: '/images/pic003.jpg',
       },
     ],
   },
-
-
-
-
 };
+
 export default zh;
