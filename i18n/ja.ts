@@ -22,17 +22,17 @@ const ja: Dictionary = {
 
   routes: {
     junior: {
-      image: '/images/route-junior.jpg',
+      image: '/images/pic001.jpeg',
       title: '中学・高校進学',
       desc: '日本の中学・高校進学ルート。',
     },
     university: {
-      image: '/images/route-university.jpg',
+      image: '/images/pic002.jpeg',
       title: '大学・大学院',
       desc: '学部・大学院進学支援。',
     },
     work: {
-      image: '/images/route-work.jpg',
+      image: '/images/pic003.jpeg',
       title: '就職',
       desc: '特定技能・人文知識ビザ。',
     },
@@ -65,17 +65,17 @@ const ja: Dictionary = {
       {
         title: '2024年 日本留学政策',
         desc: '最新の制度情報。',
-        image: '/images/pic001.jpg',
+        image: '/images/pic001.jpeg',
       },
       {
         title: '2025年 日本留学政策',
         desc: '最新の制度情報。',
-        image: '/images/pic002.jpg',
+        image: '/images/pic002.jpeg',
       },
       {
         title: '2026年 日本留学政策',
         desc: '最新の制度情報。',
-        image: '/images/pic003.jpg',
+        image: '/images/pic003.jpeg',
       },
     ],
   },

@@ -22,17 +22,17 @@ const zh: Dictionary = {
 
   routes: {
     junior: {
-      image: '/images/pic001.jpg',
+      image: '/images/pic001.jpeg',
       title: '初高中赴日',
       desc: '面向初高中生的日本升学路线。',
     },
     university: {
-      image: '/images/pic002.jpg',
+      image: '/images/pic002.jpeg',
       title: '大学 / 大学院',
       desc: '本科与研究生升学规划。',
     },
     work: {
-      image: '/images/pic003.jpg',
+      image: '/images/pic003.jpeg',
       title: '社会人就职',
       desc: '特定技能、人文签证就职支持。',
     },
@@ -65,17 +65,17 @@ const zh: Dictionary = {
       {
         title: '2025 日本留学政策更新',
         desc: '最新签证与升学政策解读。',
-        image: '/images/pic001.jpg',
+        image: '/images/pic001.jpeg',
       },
       {
         title: '2025 日本留学政策更新',
         desc: '最新签证与升学政策解读。',
-        image: '/images/pic002.jpg',
+        image: '/images/pic002.jpeg',
       },
       {
         title: '2026 日本留学政策更新',
         desc: '最新签证与升学政策解读。',
-        image: '/images/pic003.jpg',
+        image: '/images/pic003.jpeg',
       },
     ],
   },
