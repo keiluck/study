@@ -22,16 +22,19 @@ const ja: Dictionary = {
 
   routes: {
     junior: {
+      id:'01',
       image: '/images/pic001.jpeg',
       title: '中学・高校進学',
       desc: '日本の中学・高校進学ルート。',
     },
     university: {
+      id:'02',  
       image: '/images/pic002.jpeg',
       title: '大学・大学院',
       desc: '学部・大学院進学支援。',
     },
     work: {
+      id:'03',
       image: '/images/pic003.jpeg',
       title: '就職',
       desc: '特定技能・人文知識ビザ。',
@@ -59,6 +62,44 @@ const ja: Dictionary = {
     },
   },
 
+  schoolsList: {
+  japan: [
+    {
+      id: 'tokyo-university',
+      region: 'japan',
+      name: '东京大学',
+      desc: '日本顶级国立大学。',
+      image: '/images/schools/pic001.jpeg',
+    },
+    {
+      id: 'waseda',
+      region: 'japan',
+      name: '早稻田大学',
+      desc: '日本著名私立大学。',
+      image: '/images/schools/pic002.jpeg',
+    },
+  ],
+  western: [
+    {
+      id: 'harvard',
+      region: 'western',
+      name: '哈佛大学',
+      desc: '世界顶级私立大学。',
+      image: '/images/schools/pic003.jpeg',
+    },
+  ],
+  hongkong: [
+    {
+      id: 'hku',
+      region: 'hongkong',
+      name: '香港大学',
+      desc: '香港历史最悠久的大学。',
+      image: '/images/schools/pic003.jpeg',
+    },
+  ],
+},
+
+
   news: {
     title: 'ニュース',
     list: [
@@ -79,6 +120,51 @@ const ja: Dictionary = {
       },
     ],
   },
+
+
+  newsPage: {
+  title: 'ニュース',
+  tabs: {
+    japan: '日本',
+    western: '欧米',
+    hongkong: '香港',
+  },
+  japan: [
+    {
+      title: '日本留学政策の最新情報',
+      desc: '最新のビザ・進学制度について。',
+      image: '/images/news/jp-1.jpeg',
+    },
+  ],
+  western: [
+    {
+      title: '欧米大学の入学動向',
+      desc: '欧米名門校の最新動向。',
+      image: '/images/news/west-1.jpeg',
+    },
+  ],
+  hongkong: [
+    {
+      title: '香港大学入試情報',
+      desc: '香港の大学入試最新情報。',
+      image: '/images/news/hk-1.jpeg',
+    },
+  ],
+},
+
+about: {
+  title: '会社紹介',
+  intro:
+    '日本および海外進学・就職を支援する総合サービス会社です。',
+  mission:
+    '一人ひとりに最適な国際キャリアパスを提供します。',
+  services: [
+    '日本中学・高校進学支援',
+    '大学・大学院進学サポート',
+    '日本就職・ビザ支援',
+  ],
+},
+
 };
 
 export default ja;

@@ -1,20 +1,19 @@
 import { getT } from '@/i18n/getT';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import SchoolTabs from '@/components/SchoolTabs';
-import NewsList from '@/components/NewsList';
-import ImageGallerySwiper from '@/components/ImageGallerySwiper';
+import SchoolsTabsView from '@/components/schools/SchoolsTabsView';
 
-export default async function SchoolsPage({ params }: any) {
-  const { lang, t } = getT((await params).lang);
+export default async function SchoolsPage({
+  params,
+}: {
+  params: Promise<{ lang?: string }>;
+}) {
+  const { t, lang } = getT((await params).lang);
 
   return (
-    <>
-      <Header lang={lang} t={t} />
-      <SchoolTabs t={t} />
-      <NewsList t={t} />
-      <ImageGallerySwiper />
-      <Footer />
-    </>
+    <SchoolsTabsView
+      title={t.schools.title}
+      tabs={t.schools.tabs}
+      list={t.schoolsList}
+      lang={lang}
+    />
   );
 }
