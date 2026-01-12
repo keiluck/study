@@ -80,6 +80,29 @@ export interface NewsPage {
   hongkong: NewsItem[];
 }
 
+export interface BaseSection {
+  title?: string;
+}
+
+export interface TextSection extends BaseSection {
+  type: 'text';
+  text: string;
+}
+
+export interface ImageSection extends BaseSection {
+  type: 'image';
+  image: string;
+  alt?: string;
+}
+
+export interface ListSection extends BaseSection {
+  type: 'list';
+  items: string[];
+}
+export type RouteSection =
+  | TextSection
+  | ImageSection
+  | ListSection;
 /* =======================
    About
 ======================= */
@@ -96,6 +119,7 @@ export interface RouteItem {
   image: string;
   title: string;
   desc: string;
+  content: RouteSection[];
 }
 
 export interface RoutesPage {
