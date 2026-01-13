@@ -243,6 +243,49 @@ about: {
   ],
 },
 
+downloads: {
+    title: '資料ダウンロード',
+    desc: 'ページ構成説明や各種プラン資料を PDF 形式でダウンロードできます。',
+    categories: [
+      {
+        key: 'pages',
+        title: 'ページ構成・画面フロー',
+        items: [
+          {
+            id: 'school-detail-flow',
+            title: '学校詳細ページ 画面フロー説明',
+            desc: '学校詳細ページの構成、ユーザー操作フローおよびデータ連携の説明。',
+            file: '/pdf/school_detail_page_flow.pdf',
+          },
+          {
+            id: 'school-list-flow',
+            title: '学校一覧ページ 画面フロー説明',
+            desc: '学校一覧ページの画面構成、絞り込みおよび操作フローの説明。',
+            file: '/pdf/school_detail_page_flow.pdf',
+          },
+        ],
+      },
+      {
+        key: 'routes',
+        title: '進学・就職プラン資料',
+        items: [
+          {
+            id: 'route-junior',
+            title: '中学・高校からの日本進学プラン説明',
+            desc: '中高生向け日本進学ルートおよびサポート内容の説明資料。',
+            file: '/pdf/school_detail_page_flow.pdf',
+          },
+          {
+            id: 'route-work',
+            title: '日本就職・ビザサポートプラン説明',
+            desc: '社会人向け日本就職ルート、在留資格および支援内容の説明。',
+            file: '/pdf/school_detail_page_flow.pdf',
+          },
+        ],
+      },
+    ],
+  },
+
 };
 
 export default ja;

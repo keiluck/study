@@ -244,6 +244,49 @@ about: {
   ],
 },
 
+downloads: {
+    title: '资料下载',
+    desc: '页面流程说明、方案介绍等 PDF 文件下载。',
+    categories: [
+      {
+        key: 'pages',
+        title: '页面流程说明',
+        items: [
+          {
+            id: 'school-detail-flow',
+            title: '学校详情页页面流程说明',
+            desc: '学校详情页的页面结构、用户操作流程及数据映射说明。',
+            file: '/pdf/school_detail_page_flow.pdf',
+          },
+          {
+            id: 'school-list-flow',
+            title: '学校列表页页面流程说明',
+            desc: '学校列表页的页面结构、筛选逻辑及交互流程说明。',
+            file: '/pdf/school_detail_page_flow.pdf',
+          },
+        ],
+      },
+      {
+        key: 'routes',
+        title: '升学 / 就职方案说明',
+        items: [
+          {
+            id: 'route-junior',
+            title: '初高中赴日升学方案说明',
+            desc: '面向初高中学生的日本升学整体流程与服务内容说明。',
+            file: '/pdf/school_detail_page_flow.pdf',
+          },
+          {
+            id: 'route-work',
+            title: '日本就职与签证支持方案说明',
+            desc: '社会人赴日就职路径、签证类型及服务流程说明。',
+            file: '/pdf/school_detail_page_flow.pdf',
+          },
+        ],
+      },
+    ],
+  },
+
 
 
 };

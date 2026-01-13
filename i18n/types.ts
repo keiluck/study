@@ -225,5 +225,20 @@ export interface Dictionary {
     mission: string;
     services: string[];
   };
+  /* ✅ 新增：资料下载 */
+  downloads: {
+  title: string;
+  desc: string;
+  categories: {
+    key: string;
+    title: string;
+    items: {
+      id: string;
+      title: string;
+      desc: string;
+      file: string;
+    }[];
+  }[];
+}
 }
 

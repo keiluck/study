@@ -5,6 +5,7 @@ import RouteCards from '@/components/RouteCards';
 import HeroSwiper from '@/components/HeroSwiper';
 import SchoolTabs from '@/components/SchoolTabs';
 import NewsList from '@/components/NewsList';
+import DownLoads from '@/components/DownLoads';
 import ImageGallerySwiper from '@/components/ImageGallerySwiper';
 
 
@@ -22,6 +23,8 @@ export default async function Home({
       <RouteCards t={t} lang={lang} />
       <SchoolTabs t={t} />
       <NewsList t={t} />
+      {/* 下载入口 */}
+      <DownLoads lang={lang} t={t} />
       <ImageGallerySwiper />
     </>
   );
