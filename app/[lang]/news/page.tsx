@@ -1,14 +1,15 @@
-import { getT } from '@/i18n/getT';
+// app/[lang]/news/page.tsx
+import zh from '@/i18n/zh';
+import ja from '@/i18n/ja';
 import NewsPageView from '@/components/news/NewsPageView';
 
-export default async function NewsPage({
+export default function NewsPage({
   params,
 }: {
-  params: Promise<{ lang?: string }>;
+  params: { lang: 'zh' | 'ja' };
 }) {
-  // 1️⃣ 获取语言
-  const { t } = getT((await params).lang);
+  const lang = params.lang;
+  const dict = lang === 'ja' ? ja : zh;
 
-  // 2️⃣ 只把 newsPage 传给页面组件
-  return <NewsPageView data={t.newsPage} />;
+  return <NewsPageView lang={lang} data={dict.newsPage} />;
 }

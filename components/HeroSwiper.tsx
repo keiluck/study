@@ -29,14 +29,14 @@ export default function HeroSwiper({ t }: { t: any }) {
       {/* Slide 2 */}
       <SwiperSlide>
         <section style={styles.heroAlt}>
-          <h1>{t.home.title}</h1>
+          <h1>{t.home.subtitle}</h1>
         </section>
       </SwiperSlide>
 
       {/* Slide 3 */}
       <SwiperSlide>
         <section style={styles.heroAlt2}>
-         <h1>{t.home.title}</h1>
+         <h1>{t.home.desc}</h1>
         </section>
       </SwiperSlide>
     </Swiper>

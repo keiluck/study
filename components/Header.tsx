@@ -36,7 +36,7 @@ export default function Header({
         {/* 左侧：Logo + PC 菜单 */}
         <div className={styles.left}>
           <Link href={`/${lang}`} className={styles.logo}>
-            赴日路线规划
+            华益留学求职
           </Link>
 
 

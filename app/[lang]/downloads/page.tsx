@@ -28,8 +28,8 @@ export default async function DownloadPage({
                   marginBottom: 12,
                 }}
               >
-                <h3>{item.title}</h3>
-                <p>{item.desc}</p>
+                {/* <h3>{item.title}</h3>
+                <p>{item.desc}</p> */}
 
                 <a href={item.file} download>
                   📄 PDF {item.title}

@@ -1,4 +1,5 @@
 import { getT } from '@/i18n/getT';
+import { RouteItem } from '@/i18n/types';
 
 export default async function RouteDetail({
   params,
@@ -8,7 +9,7 @@ export default async function RouteDetail({
   const { lang, t } = getT((await params).lang);
   const type = (await params).type as keyof typeof t.routes;
 
-  const route = t.routes[type];
+  const route = t.routes[type] as RouteItem | undefined;
 
   if (!route) return <div>Not Found</div>;
 

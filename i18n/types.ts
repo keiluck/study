@@ -1,70 +1,13 @@
-// export interface RouteItem {
-//   image: string;
-//   title: string;
-//   desc: string;
-// }
 
-// export interface Dictionary {
-//   common: {
-//     menu: string;
-//     viewRoute: string;
-//   };
-
-//   nav: {
-//     home: string;
-//     routes: string;
-//     schools: string;
-//     news: string;
-//     about: string;
-//   };
-
-//   home: {
-//     title: string;
-//     subtitle: string;
-//     desc: string;
-//   };
-
-//   routes: {
-//     junior: RouteItem;
-//     university: RouteItem;
-//     work: RouteItem;
-//   };
-
-//   schools: {
-//     title: string;
-//     tabs: {
-//       japan: string;
-//       western: string;
-//       hongkong: string;
-//     };
-//     japan: {
-//       title: string;
-//       desc: string;
-//     };
-//     western: {
-//       title: string;
-//       desc: string;
-//     };
-//     hongkong: {
-//       title: string;
-//       desc: string;
-//     };
-//   };
-
-//   news: {
-//     title: string;
-//     list: {
-//       title: string;
-//       desc: string;
-//       image: string;
-//     }[];
-//   };
-// }
 
 export interface NewsItem {
+  id: string;
   title: string;
   desc: string;
   image: string;
+  date: string;
+  summary: string;
+  content: string[]; // 多段正文
 }
 
 /* ✅ 新增：新闻页结构 */
@@ -107,12 +50,12 @@ export type RouteSection =
    About
 ======================= */
 
-export interface AboutPage {
-  title: string;
-  intro: string;
-  mission: string;
-  services: string[];
-}
+// export interface AboutPage {
+//   title: string;
+//   intro: string;
+//   mission: string;
+//   services: string[];
+// }
 
 export interface RouteItem {
   id:string;
@@ -150,6 +93,42 @@ export interface SchoolItem {
   desc: string;
   image: string;
 }
+
+// types/about.ts
+export interface AboutPage {
+  title: string;
+  intro: string;
+
+  mission: {
+    title: string;
+    desc: string;
+  };
+
+  services: {
+    title: string;
+    items: string[];
+  };
+
+  regions: {
+    title: string;
+    list: {
+      key: 'japan' | 'western' | 'hongkong';
+      title: string;
+      desc: string;
+    }[];
+  };
+
+  contact: {
+    title: string;
+    offices: {
+      country: string;
+      address: string;
+    }[];
+    email: string;
+    wechat: string;
+  };
+}
+
 
 
 export interface Dictionary {
@@ -222,8 +201,31 @@ export interface Dictionary {
   about: {
     title: string;
     intro: string;
-    mission: string;
-    services: string[];
+    mission: {
+      title: string;
+      desc: string;
+    };
+    services: {
+      title: string;
+      items: string[];
+    };
+    regions: {
+      title: string;
+      list: {
+        key: 'japan' | 'western' | 'hongkong';
+        title: string;
+        desc: string;
+      }[];
+    };
+    contact: {
+      title: string;
+      offices: {
+        country: string;
+        address: string;
+      }[];
+      email: string;
+      wechat: string;
+    };  
   };
   /* ✅ 新增：资料下载 */
   downloads: {
